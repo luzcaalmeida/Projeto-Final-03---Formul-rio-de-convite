@@ -1,0 +1,35 @@
+.color-choice {  
+  display: flex;  
+  justify-content: space-between;  
+  flex-direction: row;  
+  gap: 0.62rem;
+  
+  label {
+    width: 30px;
+  }
+}
+
+.color-box {  
+  height: 2.5rem;  
+  width: 2.5rem;  
+  display: block;  
+  cursor: pointer;  
+  border: 0.4rem solid var(--shape-button);  
+  border-radius: 9999rem;  
+  background-color: var(--shape-button);
+  transition: outline 0.2s ease-in-out, background-color 0.3s 
+  ease-in-out; /* Adicionando transição para cor de fundo */
+}
+
+input[type="radio"] {  
+  display: none;
+}
+
+input[type="radio"]:hover + .color-box {    
+  border: 0.4rem solid var(--shape-hover);
+}
+
+input[type="radio"]:checked + .color-box {  
+  outline: 2px solid var(--brand-light);  /* Mudando cor do outline para azul */
+  background-color: var(--shape-button); /* Mantendo cor de fundo consistente */
+}

@@ -1,0 +1,80 @@
+body {
+  top: 0;
+  left: 0;
+  box-sizing: content-box;
+
+  background-color: rgba(32, 32, 32, 0.678);
+
+  overflow: hidden;
+  height: 100%vh;
+
+  #app {
+    position: relative;
+    margin: auto;
+    width: 1280px;
+  }
+}
+
+main {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  top: 0;
+  left: 0;
+  margin-top: 2.56rem;
+  background-color: var(--shape-body);
+  border-radius: 1.25rem 0 0 1.25rem;
+  height: 768px;
+
+  overflow: hidden;
+  header {
+    margin: 1.25rem 0 1.25rem 1.25rem;
+
+    width: 400px;
+    height: 728px;
+
+    background: url(/assets/Background.png) center/cover no-repeat;
+    border-radius: 1.25rem 0 0 1.25rem;
+
+    .logo-header {
+      padding: 2rem;
+      & img {
+        width: 2.86rem;
+      }
+      & h1 {
+        padding-block: 1rem 0.25rem;
+      }
+    }
+  }
+}
+
+aside {
+  box-sizing: border-box;
+  background-color: var(--shape-body);
+  border: 1.25rem solid var(--shape-background);
+  border-radius: 1.25rem;
+
+  position: absolute;
+  inset: 1;
+  right: 0;
+
+  width: 68.75%;
+  height: 100vh;
+
+  overflow: auto;
+
+  .information {
+    width: 560px;
+    margin: 5rem 8.125rem;
+
+    img {
+      width: 1.5rem;
+    }
+
+    .subtitle {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+  }
+}
